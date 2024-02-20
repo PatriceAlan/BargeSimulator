@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Service {
 
     private String id;
@@ -5,11 +8,14 @@ public class Service {
     private String origine;
     private String destination;
 
+    private List<String> terminauxIntermediaires;
+
     public Service(String id, int capacite, String origine, String destination) {
         this.id = id;
         this.capacite = capacite;
         this.origine = origine;
         this.destination = destination;
+        this.terminauxIntermediaires = new ArrayList<String>();
     }
 
     public String getId() {
