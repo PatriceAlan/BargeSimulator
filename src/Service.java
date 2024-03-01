@@ -1,56 +1,31 @@
-import java.util.ArrayList;
 import java.util.List;
 
 public class Service {
+    private String nom;
+    private List<Port> itineraire;
+    private int debutChargement;
+    private int finChargement;
 
-    private String id;
-    private int capacite;
-    private String origine;
-    private String destination;
-
-    private List<String> terminauxIntermediaires;
-
-    public Service(String id, int capacite, String origine, String destination) {
-        this.id = id;
-        this.capacite = capacite;
-        this.origine = origine;
-        this.destination = destination;
-        this.terminauxIntermediaires = new ArrayList<String>();
+    public Service(String nom, List<Port> itineraire, int debutChargement, int finChargement) {
+        this.nom = nom;
+        this.itineraire = itineraire;
+        this.debutChargement = debutChargement;
+        this.finChargement = finChargement;
     }
 
-    public String getId() {
-        return id;
+    public String getNom() {
+        return nom;
     }
 
-    public int getCapacite() {
-        return capacite;
+    public List<Port> getItineraire() {
+        return itineraire;
     }
 
-    public String getOrigine() {
-        return origine;
+    public int getDebutChargement() {
+        return debutChargement;
     }
 
-    public String getDestination() {
-        return destination;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public void setCapacite(int capacite) {
-        this.capacite = capacite;
-    }
-
-    public void setOrigine(String origine) {
-        this.origine = origine;
-    }
-
-    public void setDestination(String destination) {
-        this.destination = destination;
-    }
-
-    public String toString() {
-        return "Service [id=" + id + ", capacite=" + capacite + ", origine=" + origine + ", destination=" + destination + "]";
+    public int getFinChargement() {
+        return finChargement;
     }
 }
