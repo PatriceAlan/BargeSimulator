@@ -1,4 +1,8 @@
-class Port {
+public class Port {
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
     private String nom;
 
     public Port(String nom) {

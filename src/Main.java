@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
         // Création des ports
         Port portA = new Port("A");
         Port portB = new Port("B");
@@ -12,30 +13,32 @@ public class Main {
         // Création des services
         List<Port> itineraireS1 = new ArrayList<>();
         itineraireS1.add(portA);
-        itineraireS1.add(portB);
-        Service serviceS1 = new Service("S1", itineraireS1, 1, 4);
+        itineraireS1.add(portD);
+        Service serviceS1 = new Service("S1", itineraireS1, 0,6, 35);
 
         List<Port> itineraireS2 = new ArrayList<>();
         itineraireS2.add(portD);
         itineraireS2.add(portB);
-        Service serviceS2 = new Service("S2", itineraireS2, 5, 6);
+        Service serviceS2 = new Service("S2", itineraireS2, 0, 3, 30);
 
         List<Port> itineraireS3 = new ArrayList<>();
-        itineraireS3.add(portA);
-        itineraireS3.add(portC);
-        Service serviceS3 = new Service("S3", itineraireS3, 2, 13);
+        itineraireS3.add(portB);
+        itineraireS3.add(portD);
+        Service serviceS3 = new Service("S3", itineraireS3, 4, 7, 10);
 
         List<Port> itineraireS4 = new ArrayList<>();
-        itineraireS4.add(portD);
-        itineraireS4.add(portB);
-        Service serviceS4 = new Service("S4", itineraireS4, 0, 12);
+        itineraireS4.add(portA);
+        itineraireS4.add(portC);
+        Service serviceS4 = new Service("S4", itineraireS4, 6, 9, 15);
+
 
 
         // Création des demandes
         Demande demande1 = new Demande("F", portA, portD, 0, 8, 13);
         Demande demande2 = new Demande("P", portD, portB, 11, 1, 15);
         Demande demande3 = new Demande("R", portA, portC, 2, 13, 20);
-        Demande demande4 = new Demande("T", portD, portB, 0, 12, 18);
+        Demande demande4 = new Demande("R", portD, portB, 0, 12, 15);
+
 
         // Création du moteur de simulation
         MoteurSimulation moteurSimulation = new MoteurSimulation();
@@ -44,6 +47,7 @@ public class Main {
         moteurSimulation.ajouterService(serviceS2);
         moteurSimulation.ajouterService(serviceS3);
         moteurSimulation.ajouterService(serviceS4);
+
 
         moteurSimulation.ajouterDemande(demande1);
         moteurSimulation.ajouterDemande(demande2);
@@ -55,5 +59,7 @@ public class Main {
             moteurSimulation.simuler();
             moteurSimulation.avancerJour();
         }
+
+
     }
 }

@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ae39e26-64ff-48bd-b318-cef38628f94f" name="Changes" comment="Ajout de classes">
-      <change afterPath="$PROJECT_DIR$/src/Demande.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IndicateurPerformance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Barge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Conteneur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GestionnaireDemandes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demande.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MoteurSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoteurSimulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Port.java" afterDir="false" />
@@ -32,6 +30,18 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "contexts": [
+    {
+      "name": "minikube",
+      "originalNamespace": "default"
+    }
+  ],
+  "isMigrated": true
+}]]></component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="minikube" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,7 +96,7 @@
       <workItem from="1709051788238" duration="89000" />
       <workItem from="1709051929866" duration="2803000" />
       <workItem from="1709134637093" duration="885000" />
-      <workItem from="1709248864596" duration="4700000" />
+      <workItem from="1709248864596" duration="14997000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de classes">
       <option name="closed" value="true" />
@@ -104,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708422475147</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ajout de classes">
+      <option name="closed" value="true" />
+      <created>1709278719097</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709278719097</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
