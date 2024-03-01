@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ae39e26-64ff-48bd-b318-cef38628f94f" name="Changes" comment="Ajout de classes">
-      <change afterPath="$PROJECT_DIR$/src/IndicateurPerformance.java" afterDir="false" />
+    <list default="true" id="7ae39e26-64ff-48bd-b318-cef38628f94f" name="Changes" comment="Modification du code de simulation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Demande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IndicateurPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IndicateurPerformance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MoteurSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoteurSimulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Port.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
       <workItem from="1709051788238" duration="89000" />
       <workItem from="1709051929866" duration="2803000" />
       <workItem from="1709134637093" duration="885000" />
-      <workItem from="1709248864596" duration="14997000" />
+      <workItem from="1709248864596" duration="18542000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de classes">
       <option name="closed" value="true" />
@@ -122,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709278719097</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modification du code de simulation">
+      <option name="closed" value="true" />
+      <created>1709289285568</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709289285568</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +135,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajout de classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de classes" />
+    <MESSAGE value="Modification du code de simulation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification du code de simulation" />
   </component>
 </project>

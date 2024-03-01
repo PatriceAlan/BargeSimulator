@@ -14,7 +14,7 @@ public class Main {
         List<Port> itineraireS1 = new ArrayList<>();
         itineraireS1.add(portA);
         itineraireS1.add(portD);
-        Service serviceS1 = new Service("S1", itineraireS1, 0,6, 35);
+        Service serviceS1 = new Service("S1", itineraireS1, 0, 6, 35);
 
         List<Port> itineraireS2 = new ArrayList<>();
         itineraireS2.add(portD);
@@ -31,14 +31,11 @@ public class Main {
         itineraireS4.add(portC);
         Service serviceS4 = new Service("S4", itineraireS4, 6, 9, 15);
 
-
-
         // Création des demandes
         Demande demande1 = new Demande("F", portA, portD, 0, 8, 13);
         Demande demande2 = new Demande("P", portD, portB, 11, 1, 15);
         Demande demande3 = new Demande("R", portA, portC, 2, 13, 20);
         Demande demande4 = new Demande("R", portD, portB, 0, 12, 15);
-
 
         // Création du moteur de simulation
         MoteurSimulation moteurSimulation = new MoteurSimulation();
@@ -48,18 +45,18 @@ public class Main {
         moteurSimulation.ajouterService(serviceS3);
         moteurSimulation.ajouterService(serviceS4);
 
-
         moteurSimulation.ajouterDemande(demande1);
         moteurSimulation.ajouterDemande(demande2);
         moteurSimulation.ajouterDemande(demande3);
         moteurSimulation.ajouterDemande(demande4);
 
-        // Simulation pour les 14 jours
-        for (int i = 1; i <= 14; i++) {
-            moteurSimulation.simuler();
-            moteurSimulation.avancerJour();
+        // Simulation pour plusieurs cycles
+        for (int cycle = 1; cycle <= MoteurSimulation.NB_CYCLES; cycle++) {
+            System.out.println("Cycle " + cycle);
+            for (int jour = 1; jour <= MoteurSimulation.CYCLE_LENGTH; jour++) {
+                moteurSimulation.simuler();
+                moteurSimulation.avancerJour();
+            }
         }
-
-
     }
 }
